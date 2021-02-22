@@ -1,0 +1,1036 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    width: 100%;
+    height:100%; 
+    background: #355070;
+    
+}
+
+.sec-1{
+    width: 100vw;
+    height: 30px;
+    background: black;
+}
+
+.sec-1 .wrapper{
+    display: flex;
+    color: #fff;
+    
+    
+}
+
+.sec-1 p{
+    font-size: 11px;
+    line-height: 30px;
+    opacity: .8;
+}
+
+.sec-2{
+    width: 100vw;
+    height: 55px;
+    background: #ce1212;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+
+#logo{
+    height: 55px;
+    cursor: pointer;
+}
+
+#logo i{
+    color: white;
+    line-height: 55px;
+    font-size: 60px;
+}
+
+.search-area{
+    width: 220px;
+    height: 30px;
+    margin-right: 40px;
+    position: relative;
+    text-align: center;
+    transition: .3s ease;
+    cursor: pointer;
+    color: white;
+}
+
+
+#search{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: none;
+    border: 1px solid #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+    
+}
+
+#search::-webkit-search-cancel-button{
+    position:relative;
+    right:20px;
+    background: #fff;
+}
+
+#search::placeholder{
+    color: rgba(255, 255, 255, 0.48);
+    font-size: 13px;
+}
+
+#search:focus{
+    outline: none;
+    color: #fff;
+    background: blue;
+    border: none;
+}
+
+.search-area .search{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.nav{
+    display: flex;
+    height: 55px;
+    align-items: center;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li{
+    height: 55px;
+    padding: 0 10px;
+    transition: .3s linear;
+}
+
+.nav ul li:hover{
+    background: blue;
+    
+}
+
+.nav ul li a{
+    line-height: 55px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.res-btns{
+    display: flex;
+} 
+
+.res-btns i{
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: rgba(235, 0, 0, 0.96);
+    cursor: pointer;
+    transition: background .2s;
+    display: none;
+}
+
+.res-btns i:hover {
+    background: rgb(255, 0, 0);
+}
+
+.res-btns .menu{
+    margin-left: 1px;
+}
+
+/*SLIDER*****/
+
+#slider{
+    width: 100%;
+    height: 100vh;
+}
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+/*ABOUT*****/
+
+#about{
+    width: 100vw;
+    height: auto;
+    background-image: url(/images/headset.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about .wrapper{
+    padding: 0 40px;
+    display: flex;
+    position: relative;
+}
+
+#about .text{
+    width: 35%;
+    margin: 100px 0;
+}
+
+#about .text h1{
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+#about .text p{
+    margin-top: 40px;
+}
+
+/*SERVICES*******/
+
+.services{
+    width: 100vw;
+    height: auto;
+}
+
+.services .wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 120px 40px;
+}
+
+.services .wrapper .main-text{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #fff;
+    
+}
+
+.services .wrapper .main-text{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #fff;
+    
+}
+
+.services .wrapper .main-text h1{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.services .wrapper .main-text p{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+    
+.services .wrapper .box{
+    width: 32%;
+    height: auto;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+        
+}
+    
+.services .wrapper .box img{
+    width: 100%;
+    height: 200px;
+
+}
+
+.services .wrapper .box .text-area{
+    padding: 15px;
+}
+
+.services .wrapper .box h1{
+    font-size: 18px;
+
+}
+
+.services .wrapper .box .text-area p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.services .wrapper .box button{
+    background: red;
+    font-size: 13px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+    
+
+
+/*CAREER****/
+
+.career{
+    width: 100vw;
+    height: auto;
+    background: red;
+}
+
+.career .wrapper{
+    padding: 70px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 140px;
+}
+
+.career .wrapper .box{
+    border-radius: 10px;
+}
+
+.career .wrapper .main-text{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #20202e;
+}
+
+.career .wrapper .main-text h1{
+    font-size: 35px;
+}
+
+.career .wrapper .main-text p{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+
+.career .wrapper .box1,
+.career .wrapper .box2{
+    width: 28%;
+    padding: 30px;
+}
+
+.career .wrapper .box3{
+    width: 42%;
+    height: 500px;
+    padding: 30px;
+}
+
+.career .wrapper .box1{   
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.career .wrapper .box2{
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.career .wrapper .box3{
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.career .pro-img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.career .pro-img img{
+    width: 100%;
+    
+}
+
+.career .wrapper .text-area{
+    margin-top: 30px;
+    color: #ff8686;
+}
+
+.career .wrapper .text-area p{
+    margin-top: 15px;    
+}
+
+
+
+
+
+/*CONTACT****/
+
+.contact{
+    width: 100vw;
+    height: auto;
+    background: #040417;
+}
+
+.contact .wrapper .box{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    
+.contact .wrapper .text-area {
+    margin-bottom: 50px;
+    color: #fff;
+    text-align: center;
+    }
+ 
+.contact .wrapper .text-area h1{
+    font-size: 24px;
+    font-weight: 700;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.contact .wrapper .text-area p{
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    opacity: .6;
+}
+
+.contact .wrapper{
+    width: 100%;
+    padding: 120px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .wrapper .box{
+    height: 400px;
+    background: rgb(16, 16, 34);
+    padding: 15px;
+    color: #516088;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    
+    
+}
+
+.contact .wrapper .box button{
+    padding: 5px 30px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 25px; 
+    border: none;
+    
+}
+
+
+
+.contact .wrapper .box1,
+.contact .wrapper .box2,
+.contact .wrapper .box3{
+    width: 20%;
+    
+}
+
+.contact .wrapper .box4{
+    width: 38%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contact .wrapper .box img{
+    height: 50%;
+    
+    
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 70px;
+    background: #000010;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.footer p{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.footer .social-media i{
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.social-media i{
+    cursor: pointer;
+}
+
+.social-media i:hover{
+    opacity: .6;
+}
+
+
+
+
+
+
+
+/*MEDIA QUERIES */
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+    
+    .header .wrapper{
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    
+    .res-btns i{
+        display: block;
+        display: grid;
+        
+    }
+    
+    .sec-1 p{
+        font-size: 8px;
+    }
+    
+    .sec-1 .wrapper{
+        padding: 0 10px;
+    }
+    
+    #navigasyon{
+        position: absolute;
+        top: 85px;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        z-index: 9999;
+        
+    }
+    .navi ul{
+        display: none;
+    }
+    
+    .search-area{
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 100vw;
+        height: auto;
+        padding: 15px 45px;
+        background: black;
+        display: none;
+        z-index: 999;
+    }
+    
+    #search{
+        width: 100%;
+        height: 35px;
+        background: blue;
+        border: none
+    }
+    
+    #search:focus{
+        width: 100%;
+        border-right: 10px;
+    
+    }
+    
+    .search-area .search{
+        display: none;
+    }
+    
+/***SLIDER******/
+    
+    #slider{
+        height: 250px;
+    }
+    
+/*ABOUT****/
+    #about .wrapper{
+        padding: 0 10px;
+    }
+    
+    #about .text{
+    width: 35%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+}
+    
+    #about .text{
+    width: 100%;
+    margin-bottom: 50px;
+    padding:20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(30px);
+}
+    
+    #about .text h1{
+    font-size: 20px;
+    }
+    
+/*SERVICES****/
+    
+    .services .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        padding-top: 50px;
+        
+    }
+    
+    .services .wrapper .main-text h1,
+    .services .wrapper .main-text p{
+        text-align: left;
+        padding: 0 15px;
+    }
+    
+    .services .wrapper .main-text p{
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    
+    .services .wrapper .box{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 30px;
+        
+}
+
+    
+/*CAREER****/
+    
+    .career .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 10px;
+
+    }
+    
+    .career .wrapper .main-text{
+    width: 100%;
+    padding: 0 15px;
+    }
+    
+    .career .wrapper .main-text h1{
+    font-size: 22px;
+        color: #ffeded;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .career .wrapper .main-text p{
+    font-size: 22px;
+    color: #ffeded;
+    font-weight: 300;
+    font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .career .wrapper .box1,
+    .career .wrapper .box2{
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    text-align: center;
+        margin-top: 30px;
+    }
+    
+    .career .wrapper .box3{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin-top: 40px;
+    text-align: center;
+    margin-top: 30px;
+        
+}
+    
+    .career .wrapper .box .pro-img{
+        width: 110px;
+        height: 110px;
+        margin-top: 30px;
+    }
+    
+/*CONTACT****/
+    
+    .contact .wrapper .text-area h1{
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0 auto;
+}
+    
+    .contact .wrapper .box{
+    width: 100%;
+    height: auto;
+    background: rgb(16, 16, 34);
+
+}
+    .footer{
+        text-align: center;
+    }
+
+    .footer p{
+        width: 100%;
+        font-size: 9px;
+    }
+    
+    .social-media{
+        margin: 0 auto;
+    }
+   
+    
+    
+    
+/*END************/
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px){
+    
+/*SLIDER****/
+    
+    .header .wrapper{
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    
+    .res-btns i{
+        display: block;
+        display: grid;
+        
+    }
+    
+    .sec-1 p{
+        font-size: 8px;
+    }
+    
+    .sec-1 .wrapper{
+        padding: 0 10px;
+    }
+    
+    #navigasyon{
+        position: absolute;
+        top: 85px;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        z-index: 9999;
+        
+    }
+    .navi ul{
+        display: none;
+    }
+    
+    .search-area{
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 100vw;
+        height: auto;
+        padding: 15px 45px;
+        background: black;
+        display: none;
+        z-index: 999;
+    }
+    
+    #search{
+        width: 100%;
+        height: 35px;
+        background: blue;
+        border: none
+    }
+    
+    #search:focus{
+        width: 100%;
+        border-right: 10px;
+    
+    }
+    
+    .search-area .search{
+        display: none;
+    }
+    
+/*ABOUT*****/
+    
+    #about .text{
+        width: 90%;
+        padding: 15px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(30px);
+        border: 2px solid rgba(255, 255, 255, 0.17);
+    }
+    
+/*CAREER*****/
+    
+    .career .wrapper .box1,
+    .career .wrapper .box2{
+        width: 49%;
+    }
+    
+    .career .wrapper .box3{
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+    }
+    
+    
+
+/*CONTACT****/
+    
+    .contact .wrapper .text-area h1{
+        width: 90%;
+    }
+    
+    .contact .wrapper .box{
+        height: auto;
+    }
+    
+    .contact .wrapper .box1,
+    .contact .wrapper .box2,
+    .contact .wrapper .box3{
+        width: 32%;
+        padding-bottom: 20px;
+    }
+    
+    .contact .wrapper .box4{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+    
+    
+   
+    
+    
+
+/*END************/    
+    
+}
+
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+    
+/*SEARCH****/
+    
+     .header .wrapper{
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    
+    .res-btns i{
+        display: block;
+        display: grid;
+        
+    }
+    
+    .sec-1 p{
+        font-size: 8px;
+    }
+    
+    .sec-1 .wrapper{
+        padding: 0 10px;
+    }
+    
+    #navigasyon{
+        position: absolute;
+        top: 85px;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        z-index: 9999;
+        
+    }
+    .navi ul{
+        display: none;
+    }
+    
+    .search-area{
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 100vw;
+        height: auto;
+        padding: 15px 45px;
+        background: black;
+        display: none;
+        z-index: 999;
+    }
+    
+    #search{
+        width: 100%;
+        height: 35px;
+        background: blue;
+        border: none
+    }
+    
+    #search:focus{
+        width: 100%;
+        border-right: 10px;
+    
+    }
+    
+    .search-area .search{
+        display: none;
+    }
+    
+/*SEARCH END****/
+    
+    #about .text{
+        width: 65%;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.15);
+        margin: 50px 0;
+        width: 80%;
+        backdrop-filter: blur(20px);
+    }
+    
+    .career .box{
+        height: 600px;
+    }
+    
+    .career .box3{
+        height: 600px !important;
+    }
+    
+/*CONTACT*****/
+    
+    .contact .wrapper .box1,
+    .contact .wrapper .box2,
+    .contact .wrapper .box3{
+        width: 33%;
+        height: auto;
+    }
+    
+    .contact .wrapper .box4{
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .contact .wrapper .box4 img{
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+@media screen and (min-width: 1025px) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
